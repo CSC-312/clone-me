@@ -2,13 +2,13 @@ pre-commit:
   parallel: true
   jobs:
     - name: lint
-      run: uxv ruff check .
+      run: uvx ruff check .
       glob: "*.py"
 
     - name: format
-      run: uxv ruff format .
+      run: uvx ruff format .
       glob: "*.py"
 
     - name: check-types
-      run: uxv ty check .
+      run: uvx ty check .
       glob: "*.py"
