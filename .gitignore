@@ -1,1 +1,4 @@
 .ropeproject
+notebooks
+*.pyc
+*.env
