@@ -22,6 +22,6 @@
 
 5. You may now run code if you've gotten here. `uv` is a drop in replacement for `pip`
 
-6. scripts/download.sh
+6. `scripts/download.sh`
 
-7. uv run src/main/main.py
+7. `uv run src/main/main.py`
