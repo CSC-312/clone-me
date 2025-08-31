@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -L -o data/pdfs.xlsx 'https://docs.google.com/spreadsheets/d/16EvIBLXp2SJpmIVG-Rovsti2BEkkoJ_1ncq8yqoHtAE/export?format=xlsx&id=16EvIBLXp2SJpmIVG-Rovsti2BEkkoJ_1ncq8yqoHtAE'
+curl -L -o data/all-data.xlsx "https://docs.google.com/spreadsheets/d/16S31KEZHFsUdkQCZst8qANNDquwCilZgw-kZ2LvnfOc/export?format=xlsx&id=16S31KEZHFsUdkQCZst8qANNDquwCilZgw-kZ2LvnfOc"
