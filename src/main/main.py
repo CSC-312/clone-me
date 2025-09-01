@@ -12,7 +12,8 @@ now = datetime.now()
 load_dotenv()
 
 logger.remove()
-logger.add(sink=sys.stdout, format="<level>{level}</level>: {message}", colorize=True)
+logger.add(sink=sys.stdout, format="<level>{level}</level>: {message}", colorize=True, level="INFO")
+
 sheet_names = pd.ExcelFile("data/all-data.xlsx", engine="openpyxl").sheet_names[0:4]
 
 df_uwc = pd.read_excel(
@@ -62,7 +63,7 @@ def generate(text: str):
     generate_content_config = types.GenerateContentConfig(
         temperature=0.4,
         thinking_config=types.ThinkingConfig(
-            thinking_budget=5103,
+            thinking_budget=4032,
         ),
         response_mime_type="application/json",
     )
@@ -101,6 +102,7 @@ if __name__ == "__main__":
         if os.path.exists(filepath):
             logger.debug(f"File already exists for {url}, skipping...")
             continue
+
 
         logger.info(
             f"[{idx}/{len(df)}] Genertaing Questions and Answers Pairs for {url}.."
